@@ -119,7 +119,7 @@
 
 ## 许可证
 
-项目采用双许可证（已获发起人批准）：
+项目采用双许可证：
 
 - 代码与脚本：Apache License 2.0（见 [LICENSE-CODE](LICENSE-CODE)）
 - 文档、原则与评测内容：Creative Commons Attribution-ShareAlike 4.0 International（见 [LICENSE-CONTENT](LICENSE-CONTENT)）
