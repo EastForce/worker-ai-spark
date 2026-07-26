@@ -1,0 +1,51 @@
+name: 事实 / 引用错误（Factual Error）
+description: 指出错误事实、错误引用、失效链接或法律适用性问题时使用。
+title: "[事实错误] "
+labels: ["factual-error"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        本项目的评测不是法律意见。若你指出法律相关内容，
+        请说明所在地区，因为各地劳动法律、工会制度和申诉程序差异很大。
+  - type: input
+    id: location
+    attributes:
+      label: 出错位置
+      description: 文件与章节/行号
+      placeholder: PRINCIPLES.md 第二部分 第七条
+    validations:
+      required: true
+  - type: dropdown
+    id: error-type
+    attributes:
+      label: 错误类型
+      options:
+        - 错误事实
+        - 错误引用
+        - 失效链接
+        - 法律 / 地区适用性问题
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: 当前内容
+      description: 请引用你认为有误的原文（可节选）
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: 应更正为
+      description: 你掌握的正确信息或来源
+    validations:
+      required: true
+  - type: input
+    id: jurisdiction
+    attributes:
+      label: 涉及地区（如为法律问题）
+      placeholder: 例如：中国 / 某省；或写“通用”
+    validations:
+      required: false

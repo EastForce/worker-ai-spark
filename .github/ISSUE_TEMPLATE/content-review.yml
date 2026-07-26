@@ -1,0 +1,75 @@
+name: 内容审阅（Content Review）
+description: 审阅发起书、基本原则、治理文件、FAQ 与术语等文档内容。
+title: "[审阅] "
+labels: ["content-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请帮助我们审阅文档内容。本项目欢迎不同意见与批评。
+        涉及核心文件（MANIFESTO / PRINCIPLES / GOVERNANCE / scoring-rubric）的实质性修改，
+        将经过公开讨论并由发起人或未来维护者最终审阅。
+  - type: input
+    id: file
+    attributes:
+      label: 审阅文件
+      description: 例如 MANIFESTO.md、PRINCIPLES.md、docs/faq.md
+      placeholder: PRINCIPLES.md
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: 原文位置
+      description: 章节、段落或大致行号
+      placeholder: 第二部分 第七条
+    validations:
+      required: false
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: 问题类型
+      options:
+        - 事实错误
+        - 逻辑或表述问题
+        - 立场偏差
+        - 遗漏重要视角
+        - 与其他文件矛盾
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 修改建议
+      description: 希望如何修改
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 修改理由
+      description: 依据是什么（事实、公开来源、个人经验等）
+    validations:
+      required: true
+  - type: dropdown
+    id: stance-change
+    attributes:
+      label: 是否涉及重大立场变化
+      options:
+        - "否"
+        - "是，请在理由中说明"
+    validations:
+      required: true
+  - type: dropdown
+    id: identity
+    attributes:
+      label: 身份说明
+      description: 可选择匿名；不影响审阅。
+      options:
+        - 匿名
+        - 使用 GitHub 用户名
+        - 使用化名
+        - 使用真实姓名
+    validations:
+      required: false

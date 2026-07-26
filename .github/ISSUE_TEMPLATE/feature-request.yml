@@ -1,0 +1,39 @@
+name: 功能 / 方向建议（Feature Request）
+description: 建议新目录、新工具、新评测方向、新语言或新模型评测方法。
+title: "[建议] "
+labels: ["feature-request"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: 建议类型
+      options:
+        - 新目录 / 仓库结构
+        - 新工具 / 脚本
+        - 新评测方向
+        - 新语言版本
+        - 新模型评测方法
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议内容
+      description: 具体想增加什么
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 为什么需要
+      description: 解决什么问题，对哪类参与者有帮助
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 范围与约束
+      description: 是否涉及敏感信息、是否需要专业审阅、是否可在首发阶段完成
+    validations:
+      required: false

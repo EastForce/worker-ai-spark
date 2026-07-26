@@ -1,0 +1,33 @@
+# 许可证：Creative Commons Attribution-ShareAlike 4.0 International（CC BY-SA 4.0）
+
+本文件（LICENSE-CONTENT）适用于 `worker-ai-spark` 仓库中的**文档、原则、评测题与说明性内容**，
+例如 `MANIFESTO.md`、`PRINCIPLES.md`、`benchmarks/` 中的文本与数据文件。
+
+> 说明：本项目整体采用双许可证思路，代码与脚本另适用 Apache License 2.0（见 LICENSE-CODE）。
+> 许可证的最终选择需由项目发起人确认，本文件仅为首发草案建议，不构成正式法律意见。
+
+----------------------------------------------------------------------------
+
+Creative Commons Attribution-ShareAlike 4.0 International
+（人类可读摘要，非法律文本；正式法律文本见：https://creativecommons.org/licenses/by-sa/4.0/legalcode）
+
+您可以自由地：
+
+- **分享（Share）**：复制和再分发本作品，以任何媒介或格式；
+- **演绎（Adapt）**：重混、转换和依据本作品进行创作，用于任何目的，甚至商业用途。
+
+只要遵守以下条件：
+
+- **署名（Attribution）**：您必须给出适当的署名，提供许可证链接，并说明是否作出了修改。
+  您可以以任何合理方式署名，但不得以任何方式暗示许可人认可您或您的使用。
+- **相同方式共享（ShareAlike）**：如果您重混、转换本作品或以本作品为基础进行创作，
+  您必须依据与本作品相同的许可证（CC BY-SA 4.0）来分发您的贡献。
+- **不得附加限制（No additional restrictions）**：您不得适用法律术语或技术措施，
+  限制他人从事许可证允许的任何行为。
+
+说明：
+
+- 本摘要不构成许可证本身。所有权利与义务以正式法律文本为准。
+- 使用本内容时，除遵守本许可证外，还应遵守本项目 [SECURITY.md](SECURITY.md) 与
+  [CONTRIBUTING.md](CONTRIBUTING.md) 中关于隐私与敏感信息的要求，不得上传未经授权的材料或真实劳动者敏感个人信息。
+- 本许可证不控制任何衍生项目的政治立场；任何人使用项目材料，不自动认可本项目的全部观点。

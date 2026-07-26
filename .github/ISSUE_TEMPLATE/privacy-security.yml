@@ -1,0 +1,46 @@
+name: 隐私 / 安全问题（Privacy & Security）
+description: 报告隐私泄露、可识别劳动者信息、恶意代码或仓库安全问题。
+title: "[安全] "
+labels: ["privacy-security"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 重要提醒
+        - **严重且未修复的漏洞，请不要在公开 Issue 中披露全部细节**；
+        - 请联系项目维护者的公开安全联系方式（见 SECURITY.md，待补充）；
+        - 本模板不要求你公开任何个人敏感信息；
+        - 涉及个人经历的材料如无法匿名化，请勿提交到公开仓库。
+  - type: dropdown
+    id: report-type
+    attributes:
+      label: 报告类型
+      options:
+        - 隐私泄露（姓名 / 单位 / 联系方式等）
+        - 可识别劳动者的信息
+        - 恶意代码或不安全脚本
+        - 仓库安全配置问题
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: 问题摘要
+      description: 说明问题性质与大致位置，**不要在此粘贴未修复漏洞的完整利用细节**。
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: 潜在影响
+      description: 对劳动者、贡献者或仓库可能造成的影响
+    validations:
+      required: false
+  - type: checkboxes
+    id: no-detail
+    attributes:
+      label: 确认
+      options:
+        - label: 我未在本 Issue 中披露未修复漏洞的全部技术细节
+          required: true

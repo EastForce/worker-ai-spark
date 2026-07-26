@@ -1,0 +1,26 @@
+name: Validate benchmarks
+
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Run benchmark validation
+        run: python scripts/validate_benchmarks.py
+
+      - name: Confirm no external upload
+        run: echo "本工作流不向任何外部服务上传数据，也不使用需要密钥的第三方 API。"

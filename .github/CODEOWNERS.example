@@ -1,0 +1,25 @@
+# CODEOWNERS 示例（CODEOWNERS.example）
+#
+# 本文件是示例。在真实仓库中如需启用，请将本文件复制为 `.github/CODEOWNERS`
+# 并填入真实维护者 GitHub 用户名或团队。
+#
+# 注意（依据 GOVERNANCE.md）：
+# - 技术贡献不自动转化为永久的政治和价值决定权；
+# - 核心文件（MANIFESTO / PRINCIPLES / GOVERNANCE / scoring-rubric）的修改
+#   应经过公开讨论，不由 AI 自行决定；
+# - 不虚构任何用户名、组织或维护者。
+#
+# 示例格式（取消注释并替换为真实用户名后启用）：
+#
+# # 核心文件需发起人 / 方向维护者审阅
+# /MANIFESTO.md           @项目发起人用户名
+# /PRINCIPLES.md         @项目发起人用户名
+# /GOVERNANCE.md         @项目发起人用户名
+# /benchmarks/scoring-rubric.md  @项目发起人用户名
+#
+# # 评测数据与脚本
+# /benchmarks/            @评测维护者用户名
+# /scripts/               @技术维护者用户名
+#
+# # 文档
+# /docs/                  @内容维护者用户名
