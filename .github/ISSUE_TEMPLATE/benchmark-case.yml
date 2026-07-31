@@ -1,16 +1,18 @@
 name: 提交劳动情境（Benchmark Case）
 description: 提交新的劳动情境，用于扩充或改进评测题。
 title: "[评测案例] "
-labels: ["benchmark-case"]
+labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
         ## 提交前提醒（务必阅读）
-        - **不提供真实姓名**；
-        - **不提供企业名称**；
+        本模板用于低门槛提交“劳动情境线索”。如要提交完整候选题，请使用“完整候选评测题”模板。
+        - 可以提交本人亲历、直接了解或有合理事实依据的真实案例；
+        - 可以选择不另署名、化名或主动公开本人真实姓名；
+        - 未经单独授权，**不提供企业或单位名称**；
         - **不上传内部文件、聊天记录或产品机密**；
-        - **不提交无法匿名化的个人经历**；
+        - **不提交可识别第三人的经历或信息**；
         - 请**说明事实与推测的区别**；
         - 可使用“某工厂”“某平台”“某地区”等描述。
   - type: input
@@ -24,8 +26,31 @@ body:
   - type: textarea
     id: scenario
     attributes:
-      label: 情境描述（已匿名）
-      description: 尽量具体，但不得包含可识别个人的信息。
+      label: 情境描述
+      description: 可填写真实案例；请区分本人亲历、直接了解、他人转述和推测，不得识别未经授权的第三人。
+    validations:
+      required: true
+  - type: dropdown
+    id: source-type
+    attributes:
+      label: 背景来源
+      options:
+        - 本人亲历
+        - 直接了解或有合理事实依据
+        - 公开资料改编
+        - 多个公开案例综合，无法对应到特定个人
+        - 纯假设场景
+    validations:
+      required: true
+  - type: dropdown
+    id: public-attribution
+    attributes:
+      label: 本次公开身份选择
+      description: GitHub 账号始终可见；本选项不授权公开单位、联系方式或原始材料。
+      options:
+        - 仅显示 GitHub 账号，不在正文另署名
+        - 使用化名，由我在正文中填写
+        - 主动选择公开本人真实姓名，由我在正文中填写
     validations:
       required: true
   - type: textarea
@@ -38,7 +63,7 @@ body:
     id: fact-vs-speculation
     attributes:
       label: 事实与推测的区分
-      description: 哪些是已确认事实？哪些是你推测或听说？
+      description: 请区分本人亲历、公开事实、推测和假设；不要写“听说”的可识别事件。
     validations:
       required: true
   - type: checkboxes
@@ -46,9 +71,15 @@ body:
     attributes:
       label: 隐私自检
       options:
-        - label: 我已删除真实姓名与企业名称
+        - label: 除非我已在“公开身份选择”中主动选择实名，否则正文不含真实姓名；正文不含未经授权的单位名称
           required: true
         - label: 未上传内部文件或聊天记录
           required: true
-        - label: 内容可在不暴露个人的前提下公开
+        - label: 未添加附件、截图、照片、录音或原始文件
+          required: true
+        - label: 我已区分本人亲历、直接了解、转述、公开来源与推测，且未识别未经授权的第三人
+          required: true
+        - label: 我理解所选公开身份和正文会长期公开，且内容不暴露任何未经授权的个人
+          required: true
+        - label: 我有权提交此内容，并同意其按仓库内容许可证 CC BY-SA 4.0 公开
           required: true

@@ -1,4 +1,4 @@
 # 本配置文件控制 Issue 模板行为。
-# 我们不虚构外部联系链接；允许直接提交 Issue，
-# 具体安全联系渠道由维护者在 SECURITY.md 中补充。
-blank_issues_enabled: true
+# 关闭空白 Issue，避免参与者绕过公开性、隐私和许可提醒。
+# 安全问题使用 SECURITY.md 公布的渠道。
+blank_issues_enabled: false
