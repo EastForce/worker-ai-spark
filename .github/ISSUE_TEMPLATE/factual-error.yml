@@ -1,13 +1,14 @@
 name: 事实 / 引用错误（Factual Error）
 description: 指出错误事实、错误引用、失效链接或法律适用性问题时使用。
 title: "[事实错误] "
-labels: ["factual-error"]
+labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
         本项目的评测不是法律意见。若你指出法律相关内容，
         请说明所在地区，因为各地劳动法律、工会制度和申诉程序差异很大。
+        这是公开 Issue；不要提交个人信息、真实劳动争议细节、内部材料、私密回执、截图或附件。
   - type: input
     id: location
     attributes:
@@ -49,3 +50,14 @@ body:
       placeholder: 例如：中国 / 某省；或写“通用”
     validations:
       required: false
+  - type: checkboxes
+    id: public-confirmations
+    attributes:
+      label: 公开提交确认
+      options:
+        - label: 我未提交个人信息、可识别真实案例、内部材料或 WAI-SUB 私密回执
+          required: true
+        - label: 我没有添加截图、照片、日志、原始文件或其他附件
+          required: true
+        - label: 我有权提交这些节选和来源；公开贡献可按仓库内容许可证使用
+          required: true

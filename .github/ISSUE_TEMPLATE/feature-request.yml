@@ -1,8 +1,12 @@
 name: 功能 / 方向建议（Feature Request）
 description: 建议新目录、新工具、新评测方向、新语言或新模型评测方法。
 title: "[建议] "
-labels: ["feature-request"]
+labels: ["enhancement"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        这是公开 Issue。只描述可长期公开的建议，不提交个人信息、真实劳动争议、内部材料、私密回执、截图或附件。
   - type: dropdown
     id: type
     attributes:
@@ -37,3 +41,14 @@ body:
       description: 是否涉及敏感信息、是否需要专业审阅、是否可在首发阶段完成
     validations:
       required: false
+  - type: checkboxes
+    id: public-confirmations
+    attributes:
+      label: 公开提交确认
+      options:
+        - label: 我未提交个人信息、可识别真实案例、内部材料或 WAI-SUB 私密回执
+          required: true
+        - label: 我没有添加截图、照片、日志、原始文件或其他附件
+          required: true
+        - label: 我有权提交此建议；公开贡献可按仓库内容许可证使用
+          required: true

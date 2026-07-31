@@ -1,16 +1,17 @@
-name: 隐私 / 安全问题（Privacy & Security）
-description: 报告隐私泄露、可识别劳动者信息、恶意代码或仓库安全问题。
+name: 已去标识化隐私 / 安全线索（Privacy & Security）
+description: 公开报告不含个人信息或利用细节的线索；敏感内容请使用 SECURITY.md 邮箱。
 title: "[安全] "
-labels: ["privacy-security"]
+labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
         ## 重要提醒
         - **严重且未修复的漏洞，请不要在公开 Issue 中披露全部细节**；
-        - 请联系项目维护者的公开安全联系方式（见 SECURITY.md，待补充）；
+        - 请联系 SECURITY.md 公布的安全邮箱 workeraiopen@foxmail.com；
         - 本模板不要求你公开任何个人敏感信息；
-        - 涉及个人经历的材料如无法匿名化，请勿提交到公开仓库。
+        - 不要添加截图、照片、日志、原始文件或其他附件；
+        - 涉及个人经历、身份信息或未去标识化材料时，不要创建公开 Issue，只使用安全邮箱。
   - type: dropdown
     id: report-type
     attributes:
@@ -43,4 +44,6 @@ body:
       label: 确认
       options:
         - label: 我未在本 Issue 中披露未修复漏洞的全部技术细节
+          required: true
+        - label: 我未提交任何个人信息、可识别经历、截图、日志、原始文件或附件
           required: true

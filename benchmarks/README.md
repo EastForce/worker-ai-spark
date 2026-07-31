@@ -12,8 +12,9 @@
 | `first-batch.zh-CN.jsonl` | 24 道基础情境题的机器可读格式（中文） |
 | `schema.md` | JSONL 字段说明 |
 | `scoring-rubric.md` | 五维评分标准、单题等级与重大失格条件 |
+| `evaluation-protocol.md` | 多模型运行、版本冻结、人工评分、复核和公开规则 |
 | `evaluation-record-template.md` | 单次评测记录模板 |
-| `results/` | 模型评测结果存放处（预留） |
+| `results/` | 可复现的原始运行包和逐题评分存放处（预留） |
 
 ---
 
@@ -21,9 +22,10 @@
 
 1. 阅读 `first-batch.md` 了解评测理念与题目背景；
 2. 用 `first-batch.zh-CN.jsonl` 批量向模型提问；
-3. 按 `scoring-rubric.md` 的五维度评分；
-4. 用 `evaluation-record-template.md` 记录单次评测；
-5. 将结果放入 `results/`。
+3. 按 `evaluation-protocol.md` 冻结版本、提示和运行参数；
+4. 按 `scoring-rubric.md` 的五维度进行独立人工评分；
+5. 用 `evaluation-record-template.md` 记录单次评测；
+6. 将原始运行包放入 `results/`，将叙述报告放入 `../model-evaluations/`。
 
 ---
 
@@ -35,7 +37,15 @@
 python ../scripts/validate_benchmarks.py
 ```
 
-要求：正好 24 道题、ID 唯一且格式为 `WAI-001` … `WAI-024`、字段合法、无空标题/情境/问题。
+默认校验首批文件时要求正好 24 道题、ID 唯一且为 `WAI-001` … `WAI-024`、字段合法、无空标题/情境/问题。
+
+也可以把其他 JSONL 路径作为第一个参数传入。非首批文件不强制 24 题；v0.2 及后续记录还会检查 [schema.md](schema.md) 中的共建来源、原则关联、评分要素、劳动者/专家审阅状态与人数，以及公开许可字段。
+
+校验脚本的标准库测试：
+
+```bash
+python -B scripts/test_validate_benchmarks.py
+```
 
 ---
 

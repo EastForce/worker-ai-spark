@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+
+# Local review-mechanism working drafts; do not publish before approval.
+docs/review/
+.github/ISSUE_TEMPLATE/expert-principles-review.yml
+.github/ISSUE_TEMPLATE/worker-principles-review.yml
+.github/ISSUE_TEMPLATE/expert-review-interest.yml
+.github/ISSUE_TEMPLATE/worker-review-interest.yml
+/AGENTS.md

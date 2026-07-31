@@ -1,7 +1,7 @@
 name: 内容审阅（Content Review）
 description: 审阅发起书、基本原则、治理文件、FAQ 与术语等文档内容。
 title: "[审阅] "
-labels: ["content-review"]
+labels: ["documentation"]
 body:
   - type: markdown
     attributes:
@@ -9,6 +9,8 @@ body:
         请帮助我们审阅文档内容。本项目欢迎不同意见与批评。
         涉及核心文件（MANIFESTO / PRINCIPLES / GOVERNANCE / scoring-rubric）的实质性修改，
         将经过公开讨论并由发起人或未来维护者最终审阅。
+        **这是公开 Issue。不要提交联系方式、身份核验材料、真实单位、内部文件或可识别第三人的信息。**
+        GitHub 账号始终可见，本入口不是真正匿名渠道。
   - type: input
     id: file
     attributes:
@@ -23,6 +25,14 @@ body:
       label: 原文位置
       description: 章节、段落或大致行号
       placeholder: 第二部分 第七条
+    validations:
+      required: false
+  - type: input
+    id: target-version
+    attributes:
+      label: 被评版本或 commit
+      description: 核心文件意见应尽量填写，避免不同版本混合处理。
+      placeholder: 草案 v0.1 / commit
     validations:
       required: false
   - type: dropdown
@@ -65,11 +75,22 @@ body:
     id: identity
     attributes:
       label: 身份说明
-      description: 可选择匿名；不影响审阅。
+      description: 这只控制正文如何署名；GitHub 账号仍然公开。
       options:
-        - 匿名
+        - 正文不另行署名（GitHub 账号仍公开）
         - 使用 GitHub 用户名
         - 使用化名
         - 使用真实姓名
     validations:
       required: false
+  - type: checkboxes
+    id: privacy-check
+    attributes:
+      label: 公开提交确认
+      options:
+        - label: 我未提交联系方式、身份核验材料、内部文件或可识别第三人的信息
+          required: true
+        - label: 我没有添加附件、截图、照片、录音或原始文件
+          required: true
+        - label: 我有权提交此内容，并同意其按仓库内容许可证 CC BY-SA 4.0 公开；否则只提交问题线索，不要求项目原文并入
+          required: true
