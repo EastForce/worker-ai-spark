@@ -30,7 +30,7 @@
 
 请通过以下安全邮箱报告隐私与安全漏洞：
 
-> **workeraiopen@foxmail.com**
+> **worker.ai.spark@gmail.com**
 >
 > 请**不要**在公开 Issue 中发布未修复的隐私和安全漏洞细节。涉及敏感材料的报告请使用此邮箱，维护者会单独处理。
 
