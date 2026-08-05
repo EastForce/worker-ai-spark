@@ -16,7 +16,7 @@ body:
     id: principle
     attributes:
       label: 对应原则及版本
-      placeholder: 第九条 / PRINCIPLES.md 草案 v0.1
+      placeholder: 第九条 / PRINCIPLES.md v0.1.0
     validations:
       required: true
   - type: input

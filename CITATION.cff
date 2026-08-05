@@ -2,11 +2,13 @@ cff-version: 1.2.0
 title: "火种计划——开源劳动者AI（Worker AI Spark Project）"
 message: "如果您在研究中使用了本项目，请引用如下信息，并尊重各文件的许可证。"
 type: software
-version: 0.1-draft
-license: "Apache-2.0 (code) / CC-BY-SA-4.0 (content)"
+version: 0.1.0
+date-released: 2026-08-05
+license:
+  - Apache-2.0
+  - CC-BY-SA-4.0
 authors:
   - name: "项目发起人"
-    note: "首发阶段以“Worker AI Spark发起人”署名，不公开现实工作单位与完整个人信息；真实身份可在必要的专业审阅、合作与责任核实时向可信参与者适度披露。"
 keywords:
   - "workers"
   - "labor"
@@ -15,10 +17,7 @@ keywords:
   - "open source"
   - "AI evaluation"
 repository-code: "https://github.com/EastForce/worker-ai-spark"
-url: "https://github.com/（待发起人补充）"
+url: "https://github.com/EastForce/worker-ai-spark"
 abstract: >-
   火种计划是一个尝试为未来人工智能保存劳动者立场、劳动知识、公开评测和共同治理机制的开源项目。
-  当前处于草案与基础建设阶段，成果主要为发起书、基本原则、第一批评测题和仓库结构，尚未训练专属模型，也未声称人工智能已经产生意识。
-notes:
-  - "本项目不声称已经拥有具有意识的AI，也不声称已经训练出真正具有工人阶级意识的模型。"
-  - "许可证（代码 Apache-2.0 / 内容 CC BY-SA 4.0）；本说明不构成正式法律意见。"
+  当前为首次正式发布版本（v0.1.0），成果主要为发起书、基本原则、第一批评测题和仓库结构，尚未训练专属模型，也未声称人工智能已经产生意识。
