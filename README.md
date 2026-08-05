@@ -112,7 +112,7 @@
 - 行为准则：[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 - 术语解释：[docs/terminology.md](docs/terminology.md)
 - 常见问题：[docs/faq.md](docs/faq.md)
-- 讨论区：GitHub Discussions（当前远端未启用；未来启用时将更新本说明）
+- 讨论区：GitHub Discussions（已启用）
 
 **项目发起人**：Worker AI Spark发起人。首发阶段不公开现实工作单位和完整个人信息，以避免项目观点与任何所在机构产生不必要关联；真实身份可在必要的专业审阅、合作与责任核实时，向可信参与者适度披露。发起人对项目初始内容负责，但不主张永久垄断工人阶级立场的解释权，详见 [GOVERNANCE.md](GOVERNANCE.md)。
 
