@@ -32,7 +32,7 @@ body:
     attributes:
       label: 被评版本或 commit
       description: 核心文件意见应尽量填写，避免不同版本混合处理。
-      placeholder: 草案 v0.1 / commit
+      placeholder: v0.1.0 / commit
     validations:
       required: false
   - type: dropdown
