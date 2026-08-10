@@ -1,5 +1,7 @@
 # 火种计划——开源劳动者AI
 
+> **English version:** [Read this page in English](README.en.md)
+
 > 火种计划是一个尝试为未来人工智能保存劳动者立场、劳动知识、公开评测和共同治理机制的开源项目。
 
 [中文项目名] 火种计划——开源劳动者AI
