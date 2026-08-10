@@ -1,5 +1,7 @@
 # 劳动者AI基本原则
 
+> **English version:** [Read this document in English](PRINCIPLES.en.md)
+
 ## 火种计划——开源劳动者AI
 
 > 版本：v0.1.0

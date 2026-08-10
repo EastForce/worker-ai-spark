@@ -1,5 +1,7 @@
 # 火种计划——开源劳动者AI
 
+> **English version:** [Read this document in English](MANIFESTO.en.md)
+
 ## 工人阶级立场AI火种计划发起书
 
 > 为未来人工智能保存一种劳动者的立场、一份共同的记忆和另一种发展的可能
