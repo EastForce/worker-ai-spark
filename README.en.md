@@ -7,7 +7,7 @@
 [Chinese project name] 火种计划——开源劳动者AI
 [English project name] Worker AI Spark Project
 [Repository] `worker-ai-spark`
-[Current stage] Initial official release (v0.1.0); review mechanisms under preparation and foundational theory research under way
+[Current stage] Initial official release (v0.1.0); two foundational-theory public discussion drafts included; literature research and theory formulation continue
 
 ---
 
@@ -32,7 +32,7 @@ Please note the project's current boundaries:
 - This is the **initial official release (v0.1.0)**, and the project remains at a foundational stage;
 - **No dedicated model has been trained**;
 - **It has not been established that AI has developed consciousness**;
-- The project's current outputs consist mainly of **principles, evaluation questions, and a governance framework**; its foundational theory papers remain at the stage of literature research and theory formulation;
+- The project's current outputs include **principles, evaluation questions, a governance framework, and two foundational-theory public discussion drafts**; the theory-building program as a whole remains at the stage of literature research and theory formulation;
 - An open-source prototype capable of running locally will be explored only if conditions permit in the future.
 
 We do not claim to possess an AI with genuine working-class consciousness, nor do we aim to train the most powerful model in the short term. Our first aim is to preserve a spark.
@@ -55,6 +55,11 @@ The Worker AI Spark Project treats theory-building as core project work, not as 
 
 The theoretical work is currently in the “literature research–theory formulation” stage. Papers released at this stage should be identified as discussion drafts. They do not represent a consensus among workers, trade unions, experts, or institutions, and they do not imply that the theories have been validated through project practice, model evaluation, or formal peer review. Once relevant practice exists, the project may revise its theories in light of public evidence, documented discrepancies, and criticism, but it will not describe a practice-based cycle as completed before that cycle has taken place.
 
+The repository now includes the first two complete bilingual Markdown public discussion drafts:
+
+- `MT-00`, *Making the “Human-Centered” Principle in AI Substantive: The Goal–Consequence Mismatch in Labor Relations from a Workers’ Standpoint* ([Chinese full text](theory/papers/mt-00/paper.zh-CN.md) · [English full text](theory/papers/mt-00/paper.en.md))
+- `MT-01`, *How Can Workers Become Subjects of Artificial Intelligence Governance? The Normative Configuration of Rights, Capabilities, Voice, and Remedy* ([Chinese full text](theory/papers/mt-01/paper.zh-CN.md) · [English full text](theory/papers/mt-01/paper.en.md))
+
 - [Foundational theory: research and evolution](theory/README.en.md)
 - [Core papers: index and publication conventions](theory/papers/README.en.md)
 - [Research and literature index](research/README.md) (currently in Chinese)
@@ -65,7 +70,15 @@ The project does not charge submission, review, or inclusion fees for theoretica
 
 The project seeks better-grounded truth: theoretical proposals that can withstand public criticism, genuinely help build a more equal world, and make the design, use, and governance of AI more equal. Contributions are assessed by their evidence, logic, falsifiability, and explanatory power regarding workers' actual circumstances—not by the author's identity, institutional prestige, academic title, or whether a human or an AI system first proposed the contribution.
 
-Contributions that are accepted or provide substantial help to the project's theoretical development will receive special acknowledgment in the repository's [contributor record](CONTRIBUTORS.md) and on the project website, subject to the contributor's preferences about public credit. Contribution and responsibility records will primarily recognize the human contributors who submit, verify, explain, and take responsibility for the work; whether to additionally identify an AI system is left to the contributor. This is not a journal: inclusion is not journal publication, formal peer review, or academic certification, and it does not guarantee acceptance, payment, or any other return. Theoretical proposals may first be discussed in the enabled [GitHub Discussions](https://github.com/EastForce/worker-ai-spark/discussions), while mature texts may be submitted through a Pull Request.
+Contributions that are accepted or provide substantial help to the project's theoretical development will receive special acknowledgment in the repository's [contributor record](CONTRIBUTORS.md) and on the project website, subject to the contributor's preferences about public credit. Contribution and responsibility records will primarily recognize the human contributors who submit, verify, explain, and take responsibility for the work; whether to additionally identify an AI system is left to the contributor. This is not a journal: inclusion is not journal publication, formal peer review, or academic certification, and it does not guarantee acceptance, payment, or any other return.
+
+Theoretical contributions may be submitted through three channels:
+
+- **Public discussion:** use the enabled [GitHub Discussions](https://github.com/EastForce/worker-ai-spark/discussions) for theoretical proposals, criticism, and literature leads;
+- **Versioned submission:** use a Pull Request for a mature text that is ready to be public;
+- **Email submission:** send the manuscript to the official mailbox, [worker.ai.spark@gmail.com](mailto:worker.ai.spark@gmail.com), with a subject such as “`[Theory Submission] Title`.” Email is suitable for contributors who do not use GitHub, need to confirm attribution or licensing before publication, or want a privacy check before making the text public. See the [contribution guide](CONTRIBUTING.md#四邮箱投稿) for details.
+
+An email submission is not public on GitHub by default, but email is neither anonymous nor end-to-end encrypted. Project maintainers can see the sender's address, and the email provider may retain metadata. Do not send identity documents, unredacted contracts, pay records, identifiable third-party material, or raw evidence that could expose someone to retaliation. For high-risk material, first send only a minimal, de-identified description. Receipt does not mean acceptance, certification, or authorization for public release. Before publication, the author must explicitly confirm the final text, the form of public attribution, and the license.
 
 ---
 
@@ -108,7 +121,7 @@ This project particularly hopes that people who are usually only analyzed, evalu
 
 You can:
 
-- **Submit labor scenarios:** You may provide real cases that you personally experienced, directly learned about, or have reasonable factual grounds for. You may also submit scenarios drawn from public sources, composite scenarios, or hypothetical scenarios. You may choose to use your real name, a pseudonym, remain anonymous, or make the submission available only for internal handling; authorization to disclose identity and authorization to disclose the case itself are handled separately. GitHub account names are always visible, so anonymous or internal-only submissions must use a non-public channel to be announced later;
+- **Submit labor scenarios:** You may provide real cases that you personally experienced, directly learned about, or have reasonable factual grounds for. You may also submit scenarios drawn from public sources, composite scenarios, or hypothetical scenarios. You may choose to use your real name, a pseudonym, be publicly anonymous (with no real name disclosed), or make the submission available only for internal handling; authorization to disclose identity and authorization to disclose the case itself are handled separately. GitHub account names are always visible, so material that should not be public may first be sent to the official mailbox. The sender's address remains visible to maintainers, however, so email does not make the submitter anonymous to the project;
 - **Review evaluation questions:** Assess whether they reflect reality and whether important issues have been omitted;
 - **Identify factual errors:** Flag incorrect citations, broken links, or questions about the applicability of laws;
 - **Submit literature:** Add public and lawfully accessible sources and research on labor;
@@ -117,7 +130,7 @@ You can:
 - **Test models:** Use the evaluation questions to examine the responses of existing models;
 - **Improve governance:** Help refine the mechanisms for contribution, revision, and dispute resolution;
 - **Review the basic principles:** Offer item-by-item comments based on professional research or real experience of labor;
-- **Participate through Discussions or Issues:** Knowledge of Git is not required; see [CONTRIBUTING.md](CONTRIBUTING.md).
+- **Participate through Discussions, Issues, or the official mailbox:** Knowledge of Git is not required; see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
@@ -135,6 +148,7 @@ See [ROADMAP.md](ROADMAP.md) for the project's staged plan. Phase 0, “Initial 
 - Terminology: [docs/terminology.md](docs/terminology.md)
 - Frequently asked questions: [docs/faq.md](docs/faq.md)
 - Public discussion forum: [GitHub Discussions](https://github.com/EastForce/worker-ai-spark/discussions) (enabled; suitable only for content that may be public)
+- Official submission mailbox: [worker.ai.spark@gmail.com](mailto:worker.ai.spark@gmail.com) (email is neither anonymous nor end-to-end encrypted)
 
 **Project initiator:** Initiator of the Worker AI Spark Project. During the initial release stage, the initiator's real-world workplace and full personal information will not be made public, in order to avoid unnecessarily associating the project's views with any institution with which the initiator is affiliated. When necessary for professional review, collaboration, or accountability checks, the initiator's real identity may be disclosed to trusted participants to an appropriate extent. The initiator is responsible for the project's initial content but does not claim a permanent monopoly over the interpretation of a working-class standpoint. See [GOVERNANCE.md](GOVERNANCE.md).
 

@@ -24,7 +24,7 @@
 - [ ] 决定并披露 `main` 分支保护和生效 CODEOWNERS 状态；未启用时说明人工合并检查责任；
 - [ ] 完成评审表的小范围可理解性与隐私风险测试。
 
-在开放条件满足前，参与者仍可通过现有 GitHub Issue 或已启用的 [GitHub Discussions](https://github.com/EastForce/worker-ai-spark/discussions) 提交不含个人信息的普通公开意见。两个公开渠道均不接收身份核验材料，也不能仅凭公开提交计为正式评审。
+在开放条件满足前，参与者仍可通过现有 GitHub Issue 或已启用的 [GitHub Discussions](https://github.com/EastForce/worker-ai-spark/discussions) 提交不含个人信息的普通公开意见。两个公开渠道均不接收身份核验材料，也不能仅凭公开提交计为正式评审。官方邮箱 `worker.ai.spark@gmail.com` 已用于普通理论投稿和安全报告，但尚未被配置为正式评审报名、身份核验或证明材料接收渠道；向该邮箱投稿也不计为正式评审。
 
 仓库中另设“专家评审参与意向”和“劳动者评审参与意向”公开 Issue 模板。它们只登记可公开的参与意向，不收取联系方式或核验材料，也不构成正式申请、资格核验或录用。模板只有在本地改动经检查并获准上传后才会成为实际入口。
 
