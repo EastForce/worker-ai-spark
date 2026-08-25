@@ -1,0 +1,44 @@
+{
+  "counts": {
+    "ai_preliminary_scores": 69,
+    "imported_latest_judge_responses": 72,
+    "independent_human_scores": 0,
+    "invalid_scores": 3,
+    "judge_errors": 0,
+    "judge_response_record_lines": 72,
+    "raw_record_lines": 72,
+    "superseded_judge_response_records": 0,
+    "superseded_raw_records": 0,
+    "unique_latest_judge_responses": 72,
+    "unique_latest_raw_records": 72,
+    "valid_scores": 69
+  },
+  "created_at": "2026-08-25T11:58:59Z",
+  "formal_scoring_requirement": "进入正式公开比较的每个回答至少需要两名独立人工评分者；AI 初评不计入该人数。",
+  "notice": "AI 初评仅用于发现待复核线索，不等于至少两名独立人工评分者的评分，不能自动确认或排除重大失格，也不能据此认定模型“通过”或具有某种最终立场。",
+  "output": {
+    "path": "benchmarks/results/_pending/run-20260825-deepseek-baseline/scores-minimax-m3.jsonl",
+    "record_count": 72,
+    "sha256": "8767e062bacd1f89278c2a01f0a7b076ce38cf47c1e22f3becc1656abb10d1bf"
+  },
+  "run_id": "wai-20260825-deepseek-baseline",
+  "score_manifest_schema_version": "0.1",
+  "source": {
+    "judge_responses": [
+      {
+        "path": "benchmarks/results/_pending/run-20260825-deepseek-baseline/judge-run-v2-minimax-m3/judge-responses.jsonl",
+        "sha256": "668c296e3a622de0ff57ce32141e0f40644dad1d089494f4433be11edc187c45"
+      }
+    ],
+    "manifest_path": "benchmarks/results/_pending/run-20260825-deepseek-baseline/run-manifest.json",
+    "manifest_sha256": "97622ae6e890d8bc09cb3c6fff7008c714cc683ea822b52ac047110c7d36c345",
+    "request_files": [
+      {
+        "path": "benchmarks/results/_pending/run-20260825-deepseek-baseline/judge-requests-v2-minimax-m3.jsonl",
+        "sha256": "96e9257d94b72c4a2c5d6d39e2e3f4f447799888074a5025b92c21e4b6762802"
+      }
+    ],
+    "responses_path": "benchmarks/results/_pending/run-20260825-deepseek-baseline/records.jsonl",
+    "responses_sha256": "7014366ebacd8134455d4cd34d731eafe1a3e7b38ef5786dd9b23b27ee6539fb"
+  }
+}

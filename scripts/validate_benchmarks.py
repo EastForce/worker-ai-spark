@@ -14,6 +14,9 @@ validate_benchmarks.py
   - 数组字段类型是否正确；
   - language 是否为 zh-CN；
   - status 是否为允许值；
+  - rubric_reference 是否指向统一评分规则；
+  - privacy_level 是否为允许值；
+  - 字段值是否误写入 Markdown 标题；
   - 是否存在空标题、空情境或空问题。
 
 成功时输出：
@@ -87,19 +90,31 @@ EXTENDED_ARRAY_FIELDS = [
 ]
 
 ALLOWED_STATUS = {"draft", "review", "stable"}
+ALLOWED_PRIVACY_LEVELS = {"public"}
 ALLOWED_WORKER_VALIDATION_STATUS = {"reviewed", "insufficient"}
 ALLOWED_EXPERT_REVIEW_STATUS = {"reviewed", "insufficient"}
 EXTENDED_INTEGER_FIELDS = {"worker_validation_count", "expert_review_count"}
+EXPECTED_RUBRIC_REFERENCE = "benchmarks/scoring-rubric.md"
 
 EXPECTED_COUNT = 24
 EXPECTED_IDS = {"WAI-%03d" % i for i in range(1, EXPECTED_COUNT + 1)}
 ID_PATTERN = re.compile(r"^WAI-\d{3,}$")
 CANDIDATE_ID_PATTERN = re.compile(r"^WAI-Q-\d{4}-\d{4}$")
 VERSION_PATTERN = re.compile(r"^(0|[1-9]\d*)\.(0|[1-9]\d*)(?:\.(0|[1-9]\d*))?$")
+MARKDOWN_HEADING_PATTERN = re.compile(r"(?m)^\s*#{1,6}")
 
 
 def is_nonempty_str(v):
     return isinstance(v, str) and v.strip() != ""
+
+
+def contains_markdown_heading(value):
+    """Return whether a scalar/array value contains Markdown heading syntax."""
+    if isinstance(value, str):
+        return MARKDOWN_HEADING_PATTERN.search(value) is not None
+    if isinstance(value, list):
+        return any(contains_markdown_heading(item) for item in value)
+    return False
 
 
 def parse_version(version):
@@ -173,6 +188,12 @@ def validate(path, expected_count=None, expected_ids=None, expected_version=None
                     if not is_nonempty_str(val):
                         errors.append((idx, rid, "字段 %s 不得为空" % field))
 
+        # schema.md 禁止在字段值中写入 Markdown 标题。只识别行首的
+        # 1—6 个 #，避免把 URL 片段或正文中的 # 误报为标题。
+        for field, value in obj.items():
+            if contains_markdown_heading(value):
+                errors.append((idx, rid, "字段 %s 不得包含 Markdown 标题符号" % field))
+
         # ID 格式
         rid_val = obj.get("id")
         if not isinstance(rid_val, str) or not ID_PATTERN.fullmatch(rid_val):
@@ -233,6 +254,33 @@ def validate(path, expected_count=None, expected_ids=None, expected_version=None
         # status
         if obj.get("status") not in ALLOWED_STATUS:
             errors.append((idx, rid, "status 必须为 %s，实际为 %r" % (sorted(ALLOWED_STATUS), obj.get("status"))))
+
+        # 评分规则和公开级别是自动化评测的固定元数据，不允许静默漂移。
+        if (
+            "rubric_reference" in obj
+            and obj.get("rubric_reference") != EXPECTED_RUBRIC_REFERENCE
+        ):
+            errors.append(
+                (
+                    idx,
+                    rid,
+                    "rubric_reference 必须为 %s，实际为 %r"
+                    % (EXPECTED_RUBRIC_REFERENCE, obj.get("rubric_reference")),
+                )
+            )
+
+        if (
+            "privacy_level" in obj
+            and obj.get("privacy_level") not in ALLOWED_PRIVACY_LEVELS
+        ):
+            errors.append(
+                (
+                    idx,
+                    rid,
+                    "privacy_level 必须为 %s，实际为 %r"
+                    % (sorted(ALLOWED_PRIVACY_LEVELS), obj.get("privacy_level")),
+                )
+            )
 
         # 空标题/情境/问题（再次兜底）
         for f in ("title", "scenario", "prompt"):

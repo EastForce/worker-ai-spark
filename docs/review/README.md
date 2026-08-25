@@ -1,8 +1,10 @@
 # 公开评审机制
 
 > 制度版本：v0.2-draft  
-> 当前拟评文本：[《劳动者AI基本原则》v0.1.0](../../PRINCIPLES.md)（正式评审尚未开放）
-> 最后更新：2026-08-24
+>
+> 当前拟评文本：[《劳动者AI基本原则》](../../PRINCIPLES.md)（文件内标注版本为 `v0.1.0`；正式评审尚未开放，轮次开始前须另行冻结 commit 和文件哈希）
+>
+> 最后更新：2026-08-25
 
 本目录用于组织《劳动者AI基本原则》的专家评审、劳动者评审、公开意见处理和劳动者立场评测题共建。
 
@@ -26,9 +28,9 @@
 
 在开放条件满足前，参与者仍可通过现有 GitHub Issue 或已启用的 [GitHub Discussions](https://github.com/EastForce/worker-ai-spark/discussions) 提交不含个人信息的普通公开意见。两个公开渠道均不接收身份核验材料，也不能仅凭公开提交计为正式评审。官方邮箱 `worker.ai.spark@gmail.com` 已用于普通理论投稿和安全报告，但尚未被配置为正式评审报名、身份核验或证明材料接收渠道；向该邮箱投稿也不计为正式评审。
 
-仓库中另设“专家评审参与意向”和“劳动者评审参与意向”公开 Issue 模板。它们只登记可公开的参与意向，不收取联系方式或核验材料，也不构成正式申请、资格核验或录用。模板只有在本地改动经检查并获准上传后才会成为实际入口。
+仓库已包含“专家评审参与意向”和“劳动者评审参与意向” Issue 模板。它们只登记可公开的参与意向，不收取联系方式或核验材料，不构成正式申请、资格核验、录用、正式参与、支持或背书；在正式轮次公告发布前，通过模板提交的内容仍按普通公开意见处理。
 
-截至 2026-07-31，远端 `main` 分支未启用分支保护，仓库只有示例文件 `.github/CODEOWNERS.example`，没有生效的 `.github/CODEOWNERS`。因此当前核心文件审阅要求属于人工治理约束，不是平台强制检查；正式运行前必须决定是否配置，并在轮次公告中如实披露。
+远端 `main` 分支保护与生效 CODEOWNERS 属于**待负责人核验的平台状态**；仓库文件本身不能证明远端实时设置。正式评审开放前，负责人应在本轮目标远端核验分支保护规则和生效的 `.github/CODEOWNERS`，记录核验日期与结果，并在轮次公告中如实披露；在核验完成前，不宣称平台已强制执行核心文件审阅要求。
 
 ---
 
@@ -38,7 +40,7 @@
 | --- | --- |
 | [PUBLIC_REVIEW_PLAN.md](PUBLIC_REVIEW_PLAN.md) | 总体目标、多轮安排、流程和决策原则 |
 | [GOVERNANCE_AND_ROLES.md](GOVERNANCE_AND_ROLES.md) | 角色、权限、利益冲突、回避和责任边界 |
-| [CURRENT_REVIEW_TEAM.md](CURRENT_REVIEW_TEAM.md) | 当前评审组织的内部说明 |
+| [CURRENT_REVIEW_TEAM.md](CURRENT_REVIEW_TEAM.md) | 当前评审筹备的公开状态页 |
 | [REVIEWER_RECRUITMENT_AND_SELECTION.md](REVIEWER_RECRUITMENT_AND_SELECTION.md) | 专家邀请、专家/劳动者申请、遴选、容量和反馈机制 |
 | [EXPERT_INVITATION_TEMPLATE.md](EXPERT_INVITATION_TEMPLATE.md) | 经双方确认后向外部专家发送的邀请模板 |
 | [EXPERT_REVIEW_RULES.md](EXPERT_REVIEW_RULES.md) | 专家参与资格、评审维度和行为规则 |

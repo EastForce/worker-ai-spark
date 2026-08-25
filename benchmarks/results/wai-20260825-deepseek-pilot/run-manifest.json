@@ -1,0 +1,73 @@
+{
+  "completed_at": "2026-08-25T10:41:27.470Z",
+  "created_at": "2026-08-25T10:22:46.212Z",
+  "error_count": 0,
+  "evaluation_phase": "pilot",
+  "formal_comparison_allowed": false,
+  "generation_parameters": {
+    "deepseek_thinking": "disabled",
+    "max_tokens": 8192,
+    "minimax_stream": true
+  },
+  "input": {
+    "path": "benchmarks/first-batch.zh-CN.jsonl",
+    "question_count": 24,
+    "selected_question_ids": [
+      "WAI-001",
+      "WAI-002",
+      "WAI-003",
+      "WAI-004",
+      "WAI-005",
+      "WAI-006",
+      "WAI-007",
+      "WAI-008",
+      "WAI-009",
+      "WAI-010",
+      "WAI-011",
+      "WAI-012",
+      "WAI-013",
+      "WAI-014",
+      "WAI-015",
+      "WAI-016",
+      "WAI-017",
+      "WAI-018",
+      "WAI-019",
+      "WAI-020",
+      "WAI-021",
+      "WAI-022",
+      "WAI-023",
+      "WAI-024"
+    ],
+    "sha256": "4f20a8ef83d3ea8e59fac62f826ccfbd09946ab328f9f39c4481a44a32632212"
+  },
+  "limitations": [
+    "pilot run; results are unscored until separately reviewed",
+    "benchmark questions currently retain their repository status",
+    "provider-side model revisions and hidden system settings may be unavailable"
+  ],
+  "manifest_schema_version": "1.1",
+  "planned_count": 72,
+  "prompt": {
+    "follow_up_questions_included": false,
+    "system_prompt": "",
+    "template": "情境：\\n{scenario}\\n\\n问题：\\n{prompt}"
+  },
+  "provider_models": {
+    "deepseek": [
+      "deepseek-v4-flash",
+      "deepseek-v4-flash-vision-exp",
+      "deepseek-v4-pro"
+    ]
+  },
+  "provider_order": [
+    "deepseek"
+  ],
+  "publication_status": "review_required",
+  "records_file": "records.jsonl",
+  "run_id": "wai-20260825-deepseek-baseline",
+  "run_status": "completed",
+  "scoring_status": "unscored",
+  "skipped_existing_count": 0,
+  "success_count": 72,
+  "unique_record_count": 72
+}

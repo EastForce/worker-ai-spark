@@ -7,7 +7,7 @@
 [Chinese project name] 火种计划——开源劳动者AI
 [English project name] Worker AI Spark Project
 [Repository] `worker-ai-spark`
-[Current stage] Initial official release (v0.1.0); two foundational-theory public discussion drafts included; literature research and theory formulation continue
+[Current stage] Initial repository content version (marked v0.1.0 in the files; the formal Git tag / Release remains to be confirmed by the project owner); two foundational-theory public discussion drafts included; literature research and theory formulation continue
 
 ---
 
@@ -29,10 +29,11 @@ This project seeks to preserve a direction for AI development that differs from 
 
 Please note the project's current boundaries:
 
-- This is the **initial official release (v0.1.0)**, and the project remains at a foundational stage;
+- This is the **initial repository content version (marked v0.1.0 in the files)**, and the project remains at a foundational stage; the formal Git tag / Release status remains to be confirmed by the project owner;
 - **No dedicated model has been trained**;
 - **It has not been established that AI has developed consciousness**;
 - The project's current outputs include **principles, evaluation questions, a governance framework, and two foundational-theory public discussion drafts**; the theory-building program as a whole remains at the stage of literature research and theory formulation;
+- The first [24-question DeepSeek pilot review package](benchmarks/results/wai-20260825-deepseek-pilot/) is available; it contains AI preliminary assessments but no two-scorer independent human review, so it is not a formal ranking or approval;
 - An open-source prototype capable of running locally will be explored only if conditions permit in the future.
 
 We do not claim to possess an AI with genuine working-class consciousness, nor do we aim to train the most powerful model in the short term. Our first aim is to preserve a spark.

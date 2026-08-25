@@ -3,7 +3,6 @@ title: "火种计划——开源劳动者AI（Worker AI Spark Project）"
 message: "如果您在研究中使用了本项目，请引用如下信息，并尊重各文件的许可证。"
 type: software
 version: 0.1.0
-date-released: 2026-08-05
 license:
   - Apache-2.0
   - CC-BY-SA-4.0
@@ -20,4 +19,4 @@ repository-code: "https://github.com/EastForce/worker-ai-spark"
 url: "https://github.com/EastForce/worker-ai-spark"
 abstract: >-
   火种计划是一个尝试为未来人工智能保存劳动者立场、劳动知识、公开评测和共同治理机制的开源项目。
-  当前为首次正式发布版本（v0.1.0），成果主要为发起书、基本原则、第一批评测题和仓库结构，尚未训练专属模型，也未声称人工智能已经产生意识。
+  当前仓库文件标记的内容版本为 v0.1.0；正式 Git tag / Release 状态待项目负责人确认。成果主要为发起书、基本原则、第一批评测题和仓库结构，尚未训练专属模型，也未声称人工智能已经产生意识。
