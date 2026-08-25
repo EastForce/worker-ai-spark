@@ -2,12 +2,12 @@
 
 > **Chinese version:** [阅读中文版](README.md)
 
-> The Worker AI Spark Project is an open-source initiative that seeks to preserve workers' perspectives, knowledge of labor, open evaluation methods, and mechanisms for shared governance in the development of future artificial intelligence.
+> The Worker AI Spark Project is an open-source initiative grounded in theoretical research from workers' standpoints. It seeks to preserve workers' standpoints and knowledge of labor while developing open evaluation methods and mechanisms for shared governance in the development of future artificial intelligence.
 
 [Chinese project name] 火种计划——开源劳动者AI
 [English project name] Worker AI Spark Project
 [Repository] `worker-ai-spark`
-[Current stage] Initial official release (v0.1.0); review mechanisms under preparation
+[Current stage] Initial official release (v0.1.0); review mechanisms under preparation and foundational theory research under way
 
 ---
 
@@ -32,16 +32,16 @@ Please note the project's current boundaries:
 - This is the **initial official release (v0.1.0)**, and the project remains at a foundational stage;
 - **No dedicated model has been trained**;
 - **It has not been established that AI has developed consciousness**;
-- The project's current outputs consist mainly of **principles, evaluation questions, and a governance framework**;
+- The project's current outputs consist mainly of **principles, evaluation questions, and a governance framework**; its foundational theory papers remain at the stage of literature research and theory formulation;
 - An open-source prototype capable of running locally will be explored only if conditions permit in the future.
 
 We do not claim to possess an AI with genuine working-class consciousness, nor do we aim to train the most powerful model in the short term. Our first aim is to preserve a spark.
 
 ---
 
-## Three Core Documents
+## Three Foundational Project Documents
 
-The following are currently the project's three most important documents. Public review and criticism are welcome:
+The project's initial release established three foundational documents. Public review and criticism are welcome:
 
 - [Manifesto for the Worker AI Spark Project from a Working-Class Standpoint](MANIFESTO.en.md) — Why the project exists, what it is, and what it is not.
 - [Basic Principles for Workers' AI](PRINCIPLES.en.md) — The minimum requirements that should guide an AI that respects labor and understands workers' circumstances.
@@ -49,9 +49,29 @@ The following are currently the project's three most important documents. Public
 
 ---
 
+## Foundational Theory and Core Papers
+
+The Worker AI Spark Project treats theory-building as core project work, not as an explanation to be added after technical development. Through literature research, conceptual analysis, and public argument, the project is developing a foundational theoretical framework grounded in workers' standpoints. This framework is intended to provide a shared, contestable, traceable, and revisable basis for the manifesto, basic principles, knowledge of labor, evaluation frameworks, technical design, and governance arrangements.
+
+The theoretical work is currently in the “literature research–theory formulation” stage. Papers released at this stage should be identified as discussion drafts. They do not represent a consensus among workers, trade unions, experts, or institutions, and they do not imply that the theories have been validated through project practice, model evaluation, or formal peer review. Once relevant practice exists, the project may revise its theories in light of public evidence, documented discrepancies, and criticism, but it will not describe a practice-based cycle as completed before that cycle has taken place.
+
+- [Foundational theory: research and evolution](theory/README.en.md)
+- [Core papers: index and publication conventions](theory/papers/README.en.md)
+- [Research and literature index](research/README.md) (currently in Chinese)
+
+### Open Theoretical Contributions
+
+The project does not charge submission, review, or inclusion fees for theoretical contributions. It accepts work written independently by human authors, developed through human–AI collaboration, or initially proposed by AI and then organized, verified, submitted, and taken responsibility for by a human author. Contributions may take the form of full papers, research notes, conceptual corrections, objections, or literature reviews. The project does not treat whether an idea was first proposed by a human or by AI as a measure of quality, and it does not require human–AI collaboration to be specially highlighted; false claims about provenance or the use of AI are not acceptable. The submitting person remains responsible for the argument, citations, factual accuracy, permissions, privacy, and responses to criticism.
+
+The project seeks better-grounded truth: theoretical proposals that can withstand public criticism, genuinely help build a more equal world, and make the design, use, and governance of AI more equal. Contributions are assessed by their evidence, logic, falsifiability, and explanatory power regarding workers' actual circumstances—not by the author's identity, institutional prestige, academic title, or whether a human or an AI system first proposed the contribution.
+
+Contributions that are accepted or provide substantial help to the project's theoretical development will receive special acknowledgment in the repository's [contributor record](CONTRIBUTORS.md) and on the project website, subject to the contributor's preferences about public credit. Contribution and responsibility records will primarily recognize the human contributors who submit, verify, explain, and take responsibility for the work; whether to additionally identify an AI system is left to the contributor. This is not a journal: inclusion is not journal publication, formal peer review, or academic certification, and it does not guarantee acceptance, payment, or any other return. Theoretical proposals may first be discussed in the enabled [GitHub Discussions](https://github.com/EastForce/worker-ai-spark/discussions), while mature texts may be submitted through a Pull Request.
+
+---
+
 ## Review Mechanism
 
-Draft review rules and templates have been established, but formal review is not yet open. See [docs/review/README.md](docs/review/README.md) for the opening conditions and current status. General comments may currently be submitted through public Issues, but please do not post contact details, identification documents, internal files, or information that could identify third parties.
+Draft review rules and templates have been established, but formal review is not yet open. See [docs/review/README.md](docs/review/README.md) for the opening conditions and current status. General comments may currently be submitted through public Issues or the enabled GitHub Discussions, but please do not post contact details, identification documents, internal files, or information that could identify third parties.
 
 ---
 
@@ -97,7 +117,7 @@ You can:
 - **Test models:** Use the evaluation questions to examine the responses of existing models;
 - **Improve governance:** Help refine the mechanisms for contribution, revision, and dispute resolution;
 - **Review the basic principles:** Offer item-by-item comments based on professional research or real experience of labor;
-- **Participate through Issues:** Knowledge of Git is not required; see [CONTRIBUTING.md](CONTRIBUTING.md).
+- **Participate through Discussions or Issues:** Knowledge of Git is not required; see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
@@ -114,7 +134,7 @@ See [ROADMAP.md](ROADMAP.md) for the project's staged plan. Phase 0, “Initial 
 - Code of conduct: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 - Terminology: [docs/terminology.md](docs/terminology.md)
 - Frequently asked questions: [docs/faq.md](docs/faq.md)
-- Discussion forum: GitHub Discussions (enabled)
+- Public discussion forum: [GitHub Discussions](https://github.com/EastForce/worker-ai-spark/discussions) (enabled; suitable only for content that may be public)
 
 **Project initiator:** Initiator of the Worker AI Spark Project. During the initial release stage, the initiator's real-world workplace and full personal information will not be made public, in order to avoid unnecessarily associating the project's views with any institution with which the initiator is affiliated. When necessary for professional review, collaboration, or accountability checks, the initiator's real identity may be disclosed to trusted participants to an appropriate extent. The initiator is responsible for the project's initial content but does not claim a permanent monopoly over the interpretation of a working-class standpoint. See [GOVERNANCE.md](GOVERNANCE.md).
 
@@ -131,7 +151,7 @@ This project **does not provide formal legal advice, medical diagnoses, or inves
 The project uses two licenses:
 
 - Code and scripts: Apache License 2.0 (see [LICENSE-CODE](LICENSE-CODE))
-- Documentation, principles, and evaluation content: Creative Commons Attribution-ShareAlike 4.0 International (see [LICENSE-CONTENT](LICENSE-CONTENT))
+- Documentation, theoretical papers, principles, and evaluation content: Creative Commons Attribution-ShareAlike 4.0 International (see [LICENSE-CONTENT](LICENSE-CONTENT))
 - Explanation of license scope: [LICENSE-NOTICE.md](LICENSE-NOTICE.md)
 
 > The project initiator has approved the adoption of these licenses. This statement does not constitute formal legal advice; the original text of [LICENSE-CODE](LICENSE-CODE) and [LICENSE-CONTENT](LICENSE-CONTENT) governs the applicable rights and obligations.
