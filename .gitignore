@@ -6,3 +6,6 @@ __pycache__/
 .github/ISSUE_TEMPLATE/expert-review-interest.yml
 .github/ISSUE_TEMPLATE/worker-review-interest.yml
 /AGENTS.md
+
+# 本地试跑、API 错误与待人工确认的原始结果；审核后再提升到正式结果目录。
+/benchmarks/results/_pending/

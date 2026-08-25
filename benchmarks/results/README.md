@@ -1,6 +1,6 @@
 # 评测结果（results）
 
-> 本目录用于存放使用评测题产生的可复现原始运行包、完整回答和逐题评分。叙述性报告放在 `../../model-evaluations/`。当前为**预留目录**，尚无内容。
+> 本目录用于存放使用评测题产生的可复现原始运行包、完整回答和逐题评分。每个运行包可同时附带本批次技术报告；跨批次叙述性报告仍可放在 `../../model-evaluations/`。
 
 ---
 
@@ -28,4 +28,8 @@
 
 ## 当前状态
 
-暂无评测结果。评测题见 [../first-batch.md](../first-batch.md) 与 [../first-batch.zh-CN.jsonl](../first-batch.zh-CN.jsonl)。
+- [wai-20260825-deepseek-pilot/](wai-20260825-deepseek-pilot/)：3 个 DeepSeek 请求模型、24 题、两路 AI 盲评的 **pilot 待审包**。它不是正式模型排名，尚无独立人工评分；请先阅读包内 [evaluation-report.zh-CN.md](wai-20260825-deepseek-pilot/evaluation-report.zh-CN.md)。
+- 其他提供商的中断、配额和鉴权诊断仍只保存在被 `.gitignore` 排除的 `_pending/` 本地目录，不属于本次拟上传结果。
+- 后续断点与进入下一批次的条件见 [FOLLOW_UP_EVALUATION_PLAN.zh-CN.md](FOLLOW_UP_EVALUATION_PLAN.zh-CN.md)。
+
+评测题见 [../first-batch.md](../first-batch.md) 与 [../first-batch.zh-CN.jsonl](../first-batch.zh-CN.jsonl)。所有结果仍须由项目负责人确认公开范围。

@@ -21,8 +21,11 @@ jobs:
       - name: Run benchmark validation
         run: python scripts/validate_benchmarks.py
 
-      - name: Run validator unit tests
-        run: python -B scripts/test_validate_benchmarks.py
+      - name: Check Markdown and JSONL source consistency
+        run: python scripts/validate_benchmark_sources.py
+
+      - name: Run complete offline test suite
+        run: python -B -m unittest discover -s scripts -p "test_*.py"
 
       - name: Confirm no external upload
         run: echo "本工作流不向任何外部服务上传数据，也不使用需要密钥的第三方 API。"

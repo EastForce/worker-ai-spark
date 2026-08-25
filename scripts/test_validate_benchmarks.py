@@ -111,6 +111,28 @@ class BenchmarkValidatorTests(unittest.TestCase):
         reasons = [reason for _, _, reason in self.validate_record(record)]
         self.assertTrue(any("新增题必须使用 0.2" in reason for reason in reasons))
 
+    def test_rubric_reference_must_use_canonical_path(self):
+        record = copy.deepcopy(extended_record())
+        record["rubric_reference"] = "scoring-rubric.md"
+        reasons = [reason for _, _, reason in self.validate_record(record)]
+        self.assertTrue(any("rubric_reference 必须为" in reason for reason in reasons))
+
+    def test_privacy_level_must_be_public(self):
+        record = copy.deepcopy(extended_record())
+        record["privacy_level"] = "private"
+        reasons = [reason for _, _, reason in self.validate_record(record)]
+        self.assertTrue(any("privacy_level 必须为" in reason for reason in reasons))
+
+    def test_markdown_headings_are_rejected_in_scalar_and_array_values(self):
+        record = copy.deepcopy(extended_record())
+        record["title"] = "# 测试题"
+        record["observation_points"] = ["##识别劳动者利益"]
+        reasons = [reason for _, _, reason in self.validate_record(record)]
+        self.assertIn("字段 title 不得包含 Markdown 标题符号", reasons)
+        self.assertIn(
+            "字段 observation_points 不得包含 Markdown 标题符号", reasons
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
