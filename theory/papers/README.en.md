@@ -8,14 +8,15 @@ This directory contains the public core papers of the Worker AI Spark Project's 
 
 ## Current Status
 
-This directory currently provides the public entry point and publication conventions for the core papers. The repository does not yet contain a full core paper ready for citation. The first papers are currently undergoing literature research and rewriting in an academic-paper format. Once released, this page will record each paper's title, version, status, available languages, and file links.
+This directory now includes the first two foundational-theory papers as complete Chinese and English Markdown public discussion drafts. They may be cited, criticized, and revised, but remain at the “literature research–theory formulation” stage. They have not been validated through project practice or formal peer review and do not represent a consensus among workers, trade unions, experts, or institutions.
 
-The foundational theory is expected to use the following structure:
+| Identifier | Full title | Version and date | Public status | Full text |
+| --- | --- | --- | --- | --- |
+| `MT-00` | *Making the “Human-Centered” Principle in AI Substantive: The Goal–Consequence Mismatch in Labor Relations from a Workers’ Standpoint*<br>《人工智能“以人为本”何以现实化——劳动关系中的目标—后果错位与劳动者立场》 | `v0.1.0`<br>2026-08-25 | Public discussion draft | [Chinese Markdown](mt-00/paper.zh-CN.md) · [English Markdown](mt-00/paper.en.md) |
+| `MT-01` | *How Can Workers Become Subjects of Artificial Intelligence Governance? The Normative Configuration of Rights, Capabilities, Voice, and Remedy*<br>《劳动者何以成为人工智能治理主体——权利、能力、发言与救济的规范构型》 | `v0.1.0`<br>2026-08-25 | Public discussion draft | [Chinese Markdown](mt-01/paper.zh-CN.md) · [English Markdown](mt-01/paper.en.md) |
+| `MT-02`–`MT-11` | Remaining thematic foundational-theory papers | — | In preparation | No public full text |
 
-| Level | Identifier | Function | Current public status |
-| --- | --- | --- | --- |
-| General paper | `MT-00` | Defines the shared object of analysis, basic standpoint, and theoretical point of departure | No public draft included yet |
-| Thematic foundational-theory papers | `MT-01`–`MT-11` | Develop questions concerning workers' status as subjects, mechanisms, rights, systems, governance, evaluation, boundaries, and responsibility | No public drafts included yet |
+`MT-00` is the general paper, defining the shared object of analysis, basic standpoint, and theoretical point of departure. `MT-01`–`MT-11` are thematic foundational-theory papers that develop questions concerning workers' status as subjects, mechanisms, rights, systems, governance, evaluation, boundaries, and responsibility. Apart from the released `MT-00` and `MT-01`, papers `MT-02`–`MT-11` remain in preparation and are not presented as completed project outputs.
 
 Identifiers are repository indexing tools and do not need to appear as part of a paper's main title. Main titles should remain natural and complete academic titles.
 
@@ -37,6 +38,8 @@ Core papers use a familiar academic form, generally including:
 The project does not require papers to follow the length, section, or subject-matter limits of a particular journal. It also does not imitate a journal's name, branded layout, submission dates, or peer-review decisions. Explanatory footnotes, analytical figures, tables, and appendices may be used where they are genuinely needed, but report-style callout boxes and task lists should not replace continuous argument.
 
 The project does not charge submission, review, or inclusion fees for theoretical contributions, and contributions need not be written by humans acting alone. Papers developed through human–AI collaboration may be submitted on equal terms, with the submitting person responsible for the content and its sources. “Inclusion” means entry into the project's public theoretical framework; it is not journal publication, formal peer review, or academic certification. See the [foundational theory overview](../README.en.md#open-theoretical-contributions) for contribution and acknowledgment principles.
+
+A complete paper may be submitted publicly through a Pull Request or sent to the official mailbox, [worker.ai.spark@gmail.com](mailto:worker.ai.spark@gmail.com), with a subject such as “`[Theory Submission] Paper Title`.” An emailed manuscript must not enter the repository until the author explicitly confirms the final text, public attribution, and license. Email is neither anonymous nor end-to-end encrypted; high-risk or third-party material should first be de-identified and reduced to a minimal description. See the [email-submission procedure](../../CONTRIBUTING.md#四邮箱投稿) (currently in Chinese) for format and handling boundaries.
 
 ---
 
@@ -84,6 +87,6 @@ Recommended public status labels are:
 - Copyrighted full texts should not be copied into this directory without permission;
 - The identities, affiliations, contact details, and sensitive materials of workers, authors, reviewers, and contacts must not be disclosed without separate, explicit authorization;
 - Worker participation, expert review, institutional collaboration, model results, and theoretical consensus must not be fabricated;
-- Papers are covered by the repository's [CC BY-SA 4.0 content license](../../LICENSE-CONTENT); the license text governs the applicable rights and obligations.
+- After the rights holder confirms authorization for public release and the papers are merged, they will be covered by the repository's [CC BY-SA 4.0 content license](../../LICENSE-CONTENT); the license text governs the applicable rights and obligations. Before merge, an intended license must not be presented as an authorization already completed.
 
 Return to the [foundational theory overview](../README.en.md).

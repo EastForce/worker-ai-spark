@@ -90,7 +90,10 @@ The project evaluates theoretical work in light of truth-seeking, public critici
 
 - Public discussion: [GitHub Discussions](https://github.com/EastForce/worker-ai-spark/discussions)
 - Mature texts: submit a Pull Request following the [contribution guide](../CONTRIBUTING.md)
+- Email submission: send the manuscript to the official mailbox, [worker.ai.spark@gmail.com](mailto:worker.ai.spark@gmail.com), with a subject such as “`[Theory Submission] Title`.” This option is intended for people who do not use GitHub, need to settle attribution and licensing before publication, or want a privacy check before making a text public. See the [email-submission procedure](../CONTRIBUTING.md#四邮箱投稿) (currently in Chinese)
 - Do not submit contact details, identification documents, unauthorized cases, or other sensitive material through a public channel
+
+Email submissions are free and do not automatically constitute inclusion, peer review, or academic certification. Email is neither anonymous nor end-to-end encrypted. The project must not publish an emailed manuscript or copy it into the repository until the author has explicitly confirmed the final text, public attribution, and CC BY-SA 4.0 authorization.
 
 ---
 

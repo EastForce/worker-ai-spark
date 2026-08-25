@@ -90,7 +90,10 @@
 
 - 公开讨论：[GitHub Discussions](https://github.com/EastForce/worker-ai-spark/discussions)
 - 成熟文本：通过 Pull Request 提交，具体要求见[贡献指南](../CONTRIBUTING.md)
+- 邮箱投稿：发送至官方邮箱 [worker.ai.spark@gmail.com](mailto:worker.ai.spark@gmail.com)，主题建议使用“`[理论投稿] 标题`”；适用于不便使用 GitHub、需要在公开前确认署名和许可，或希望先做隐私判断的稿件，详见[邮箱投稿方案](../CONTRIBUTING.md#四邮箱投稿)
 - 公开渠道不得提交联系方式、证件、未经授权的案例或其他敏感材料
+
+邮箱投稿不收取费用，也不自动构成收录、同行评议或学术认证。邮件并非匿名或端到端加密渠道；未经作者明确确认最终文本、公开署名和 CC BY-SA 4.0 授权，项目不得将邮件稿件公开或复制进仓库。
 
 ---
 

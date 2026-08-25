@@ -149,7 +149,7 @@
 
 ## B 部分：非公开联系、核验与授权
 
-**本部分不得进入公开 Issue、Discussion、Pull Request、Git 仓库或 Hugging Face。非公开渠道未公布前，请勿发送。**
+**本部分不得进入公开 Issue、Discussion、Pull Request、Git 仓库或 Hugging Face。官方邮箱目前接收普通理论投稿和安全报告，但不是已经开放的正式劳动者评审核验渠道；在具体轮次公告指定提交方式前，请勿填写或发送本部分。**
 
 ### B1. 联系方式
 
