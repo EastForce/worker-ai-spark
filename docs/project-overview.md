@@ -1,12 +1,12 @@
 # 项目概览（project-overview）
 
-> 本文档为研究者、开发者和审阅者提供项目结构速览。普通读者请从 [README.md](../README.md) 进入。
+> 本文档为研究者、开发者和审阅者提供项目结构速览。普通读者可从 [三道题入门](start-here.md) 开始；成果与参与状态见 [当前进展](project-status.md)。
 
 ---
 
 ## 一、项目定位
 
-火种计划——开源劳动者AI，是一个开放研究、公共讨论与开源协作项目。当前仓库文件标记的内容版本为 v0.1.0；正式 Git tag / Release 状态待项目负责人确认。主要成果是：
+火种计划——开源劳动者AI，是一个开放研究、公共讨论与开源协作项目。当前仓库文件标记的内容版本为 v0.1.0；Git tag / Release 核对记录见 [当前进展](project-status.md#内容版本与平台发布)。主要成果是：
 
 - 一份能被后来者理解的发起书；
 - 一套能接受批评的基本原则；
@@ -36,7 +36,8 @@
 | `docs/` | 术语、FAQ、贡献记录、决策记录 |
 | `knowledge-base/` | 劳动知识库（预留） |
 | `research/` | 研究与文献索引（预留） |
-| `model-evaluations/` | 模型评测结果（预留） |
+| `benchmarks/results/` | 已有模型试测记录与待审材料 |
+| `model-evaluations/` | 独立评测报告目录（预留） |
 | `scripts/` | 校验与工具脚本 |
 | `.github/` | Issue/PR 模板与工作流 |
 
@@ -55,6 +56,6 @@
 
 - 评测题主要反映部分国家、行业与劳动形式的经验，可能需要补充农业、照护、非正规就业等视角；
 - 机器可读数据目前仅中文（`zh-CN`）一版；
-- 尚无真实模型评测结果，相关目录为占位。
+- 已有 [DeepSeek 24 题 pilot](../benchmarks/results/wai-20260825-deepseek-pilot/) 的 72 条模型回答和 AI 初评；尚无独立人工双评，不构成正式模型排名。
 
 详见 [../README.md](../README.md) 与 [../DISCLAIMER.md](../DISCLAIMER.md)。

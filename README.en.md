@@ -7,7 +7,9 @@
 [Chinese project name] 火种计划——开源劳动者AI
 [English project name] Worker AI Spark Project
 [Repository] `worker-ai-spark`
-[Current stage] Initial repository content version (marked v0.1.0 in the files; the formal Git tag / Release remains to be confirmed by the project owner); two foundational-theory public discussion drafts included; literature research and theory formulation continue
+[Current stage] Repository content marked v0.1.0; general feedback is open, while formal review remains in preparation; two foundational-theory public discussion drafts included; literature research and theory formulation continue. See [current progress](docs/project-status.md) (in Chinese) for version and participation status.
+
+**New here?** Start with [three questions about Workers' AI](docs/start-here.md) (in Chinese): read a scenario and an excerpt from a recorded model response, then leave one comment on a question. No programming or prior reading of all the theory documents is required.
 
 ---
 
@@ -29,7 +31,7 @@ This project seeks to preserve a direction for AI development that differs from 
 
 Please note the project's current boundaries:
 
-- This is the **initial repository content version (marked v0.1.0 in the files)**, and the project remains at a foundational stage; the formal Git tag / Release status remains to be confirmed by the project owner;
+- This is the **initial repository content version (marked v0.1.0 in the files)**, and the project remains at a foundational stage; see [current progress](docs/project-status.md#内容版本与平台发布) for the verified Git tag and GitHub Release records;
 - **No dedicated model has been trained**;
 - **It has not been established that AI has developed consciousness**;
 - The project's current outputs include **principles, evaluation questions, a governance framework, and two foundational-theory public discussion drafts**; the theory-building program as a whole remains at the stage of literature research and theory formulation;
@@ -85,7 +87,7 @@ An email submission is not public on GitHub by default, but email is neither ano
 
 ## Review Mechanism
 
-Draft review rules and templates have been established, but formal review is not yet open. See [docs/review/README.md](docs/review/README.md) for the opening conditions and current status. General comments may currently be submitted through public Issues or the enabled GitHub Discussions, but please do not post contact details, identification documents, internal files, or information that could identify third parties.
+**General feedback is open; formal review is not yet open.** See [current progress](docs/project-status.md#现在怎样参与) for participation routes and feedback handling, and [the review guide](docs/review/README.md) for formal opening conditions. General comments may be submitted through existing Issues or GitHub Discussions; they do not count as formal reviews. Please do not post contact details, identification documents, internal files, or information that could identify third parties.
 
 ---
 
@@ -137,7 +139,7 @@ You can:
 
 ## Current Roadmap
 
-See [ROADMAP.md](ROADMAP.md) for the project's staged plan. Phase 0, “Initial Project Release,” has been completed, and preparations are under way for Phase 1, “Public Review.”
+See [ROADMAP.md](ROADMAP.md) for the project's staged plan. The repository foundations in Phase 0 are complete; Phase 1 accepts general public feedback, while formal review remains in preparation.
 
 ---
 
